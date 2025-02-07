@@ -1,0 +1,22 @@
+header {
+  background: black;
+  display: flex;
+  position: absolute;
+  width: calc(100vw - 1rem);
+  left: 0;
+  top: 0;
+  padding-block: 2rem;
+  padding-inline: calc((100vw - 71rem) / 2);
+  align-items: center;
+  justify-content: space-between;
+
+  nav {
+    color: white;
+
+    ul {
+      display: flex;
+      font-size: 1.125rem;
+      gap: 2rem;
+    }
+  }
+}
