@@ -1,0 +1,9 @@
+$light-yellow: hsl(45, 100%, 64%);
+$dark-yellow: hsl(43, 96%, 63%);
+
+$head-foot-width: calc(100vw - 1rem);
+$pad-mar-calc: calc((100vw - 71rem) / 2);
+
+@mixin test {
+  outline: 2px solid lawngreen;
+}

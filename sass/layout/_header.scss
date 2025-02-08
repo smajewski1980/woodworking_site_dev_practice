@@ -1,12 +1,14 @@
+@use "../abstracts/variables" as *;
+
 header {
   background: black;
   display: flex;
   position: absolute;
-  width: calc(100vw - 1rem);
+  width: $head-foot-width;
   left: 0;
   top: 0;
   padding-block: 2rem;
-  padding-inline: calc((100vw - 71rem) / 2);
+  padding-inline: $pad-mar-calc;
   align-items: center;
   justify-content: space-between;
 
