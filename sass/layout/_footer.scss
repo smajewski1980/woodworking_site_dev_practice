@@ -18,7 +18,7 @@ footer {
 
     h3 {
       font-size: t.$font-sz-xl;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
       font-weight: t.$font-ex-bold;
     }
 
@@ -49,17 +49,62 @@ footer {
     }
     .footer-section-3 {
       padding-left: 1.5rem;
+
+      .footer-sec-3-top {
+        margin-bottom: 1.75rem;
+        input {
+          padding: 0.5rem 0.3rem;
+          width: 100%;
+          border: 3px solid $darker-yellow;
+          margin-bottom: 0.5rem;
+          &::placeholder {
+            letter-spacing: t.$l-s-1;
+            font-weight: t.$font-bold;
+          }
+        }
+        button {
+          background-color: transparent;
+          border: none;
+          background-image: url("/assets/images/button-bg-dark.png");
+          width: 90px;
+          height: 28px;
+          background-size: contain;
+          color: white;
+          font-weight: t.$font-ex-bold;
+        }
+      }
+
+      .footer-sec-3-bottom {
+        padding-top: 1rem;
+        border-image: url("/assets/images/separator-dark.png") 10 0/ 0.4rem 0rem
+          0rem/ 0.4rem repeat;
+
+        .footer-social-wrapper {
+          display: flex;
+          gap: 1.5rem;
+
+          > * {
+            width: 45px;
+          }
+        }
+      }
     }
   }
 
   .footer-bottom {
+    font-weight: t.$font-ex-bold;
+    color: $darker-yellow;
     display: flex;
     justify-content: space-between;
     border-top: 3px solid red;
     border-image: url("/assets/images/separator-dark.png") 10 0/ 0.4rem 0rem / 0.4rem
       repeat;
-    padding-block: 1rem;
+    padding-block: 0.25rem 1.5rem;
     margin-top: 1.5rem;
+
+    span {
+      margin-right: 0.25rem;
+    }
 
     ul {
       display: flex;

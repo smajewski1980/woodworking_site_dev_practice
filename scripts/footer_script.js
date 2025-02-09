@@ -73,7 +73,7 @@ function loadFooterHtml() {
         </section>
       </div>
       <div class="footer-bottom">
-        <p>&copy; COPYRIGHT 2012 ALL RIGHTS RESERVED.</p>
+        <p><span>&copy;</span>COPYRIGHT 2012 ALL RIGHTS RESERVED.</p>
         <nav>
           <ul>
             <li><a href="./index.html">HOME</a></li>
