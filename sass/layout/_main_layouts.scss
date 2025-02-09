@@ -1,6 +1,9 @@
+@use "../base/typography" as t;
 body {
   background-image: url("/assets/images/bg-body.png");
   background-size: 100%;
+  font-family: t.$font;
+
   main {
     padding-top: 10rem;
     max-width: 70rem;

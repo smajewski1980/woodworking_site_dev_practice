@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../base/typography" as t;
 
 footer {
   background: $dark-yellow;
@@ -7,19 +8,47 @@ footer {
   padding-inline: $pad-mar-calc;
 
   .footer-top {
-    * {
-      @include test;
-    }
+    // * {
+    //   @include test;
+    // }
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-top: 3rem;
+    padding-top: 2rem;
+
+    h3 {
+      font-size: t.$font-sz-xl;
+      margin-bottom: 1.5rem;
+      font-weight: t.$font-ex-bold;
+    }
 
     .footer-section-1 {
-      border-right: 3px solid red;
+      padding-right: 1.75rem;
+
+      .footer-img-wrapper {
+        margin-bottom: 1.5rem;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      p:not(:last-child) {
+        line-height: t.$l-h-md;
+        margin-bottom: 1.5rem;
+      }
+
+      a {
+        text-decoration: underline;
+      }
     }
     .footer-section-2 {
-      border-right: 3px solid red;
+      padding-inline: 1.5rem;
+      border-image: url("/assets/images/separator-dark-vertical.png") 0 10 /
+        0.5rem / 0.4rem repeat round;
+    }
+    .footer-section-3 {
+      padding-left: 1.5rem;
     }
   }
 
@@ -27,8 +56,10 @@ footer {
     display: flex;
     justify-content: space-between;
     border-top: 3px solid red;
+    border-image: url("/assets/images/separator-dark.png") 10 0/ 0.4rem 0rem / 0.4rem
+      repeat;
     padding-block: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 
     ul {
       display: flex;
