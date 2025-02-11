@@ -79,6 +79,30 @@ footer .footer-top .footer-section-2 .footer-card {
   gap: 0.75rem;
   margin-bottom: 2rem;
 }
+footer .footer-top .footer-section-2 .footer-card:nth-child(2) > div:first-of-type::after {
+  content: "16";
+  position: absolute;
+  bottom: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+footer .footer-top .footer-section-2 .footer-card:nth-child(3) > div:first-of-type::after {
+  content: "15";
+  position: absolute;
+  bottom: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+footer .footer-top .footer-section-2 .footer-card:nth-child(4) > div:first-of-type::after {
+  content: "14";
+  position: absolute;
+  bottom: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
 footer .footer-top .footer-section-2 .footer-card .date {
   width: 80px;
   position: relative;
