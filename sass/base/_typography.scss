@@ -1,4 +1,12 @@
-$font: "Inconsolata", sans-serif;
+@font-face {
+  font-family: "Oswald";
+  src: url("/assets/fonts/Oswald.woff") format("woff");
+}
+
+// $font: "Inconsolata", sans-serif;
+$font: "Oswald", sans-serif;
+
+$font-color: hsl(245, 24%, 9%);
 
 $font-bold: 600;
 $font-ex-bold: 800;
