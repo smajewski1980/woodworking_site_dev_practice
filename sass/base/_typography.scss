@@ -2,9 +2,14 @@
   font-family: "Oswald";
   src: url("/assets/fonts/Oswald.woff") format("woff");
 }
+@font-face {
+  font-family: "QuattrocentoSans-Regular";
+  src: url("/assets/fonts/QuattrocentoSans-Regular.woff") format("woff");
+}
 
 // $font: "Inconsolata", sans-serif;
 $font: "Oswald", sans-serif;
+$font-secondary: "QuattrocentoSans-Regular", sans-serif;
 
 $font-color: hsl(245, 24%, 9%);
 
@@ -21,3 +26,7 @@ $l-s-3: 3px;
 
 $l-h-md: 1.3;
 $l-h-lg: 1.5;
+
+p {
+  font-family: $font-secondary;
+}

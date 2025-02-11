@@ -30,6 +30,14 @@ ul {
   font-family: "Oswald";
   src: url("/assets/fonts/Oswald.woff") format("woff");
 }
+@font-face {
+  font-family: "QuattrocentoSans-Regular";
+  src: url("/assets/fonts/QuattrocentoSans-Regular.woff") format("woff");
+}
+p {
+  font-family: "QuattrocentoSans-Regular", sans-serif;
+}
+
 footer {
   background: hsl(43, 96%, 63%);
   width: calc(100vw - 1rem);
@@ -62,9 +70,35 @@ footer .footer-top .footer-section-1 a {
   text-decoration: underline;
 }
 footer .footer-top .footer-section-2 {
-  padding-inline: 1.5rem;
+  padding-inline: 2rem;
   -o-border-image: url("/assets/images/separator-dark-vertical.png") 0 10/0.5rem/0.4rem repeat round;
      border-image: url("/assets/images/separator-dark-vertical.png") 0 10/0.5rem/0.4rem repeat round;
+}
+footer .footer-top .footer-section-2 .footer-card {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+footer .footer-top .footer-section-2 .footer-card .date {
+  width: 80px;
+  position: relative;
+}
+footer .footer-top .footer-section-2 .footer-card .date::before {
+  content: "APR";
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer .footer-top .footer-section-2 .footer-card .date img {
+  width: 100%;
+}
+footer .footer-top .footer-section-2 .footer-card .footer-card-content h4 {
+  margin-bottom: 0.5rem;
+}
+footer .footer-top .footer-section-2 .footer-card .footer-card-content p {
+  font-size: 0.85rem;
+  line-height: 1.6;
 }
 footer .footer-top .footer-section-3 {
   padding-left: 1.5rem;

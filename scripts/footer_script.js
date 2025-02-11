@@ -21,7 +21,7 @@ function loadFooterHtml() {
               <img src="./assets/images/bg-time.png" alt="" />
             </div>
             <div class="footer-card-content">
-              <h5>This is just a placeholder.</h5>
+              <h4>This is just a placeholder.</h4>
               <p>
                 This is just a placeholder, so you can see what the site looks
                 like.
@@ -33,7 +33,7 @@ function loadFooterHtml() {
               <img src="./assets/images/bg-time.png" alt="" />
             </div>
             <div class="footer-card-content">
-              <h5>This is just a placeholder.</h5>
+              <h4>This is just a placeholder.</h4>
               <p>
                 This is just a placeholder, so you can see what the site looks
                 like.
@@ -45,7 +45,7 @@ function loadFooterHtml() {
               <img src="./assets/images/bg-time.png" alt="" />
             </div>
             <div class="footer-card-content">
-              <h5>This is just a placeholder.</h5>
+              <h4>This is just a placeholder.</h4>
               <p>
                 This is just a placeholder, so you can see what the site looks
                 like.
