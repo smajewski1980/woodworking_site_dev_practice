@@ -213,7 +213,7 @@ body {
   color: hsl(245, 24%, 9%);
 }
 body main {
-  padding-top: 10rem;
+  padding-top: 7.75rem;
   max-width: 70rem;
   margin-inline: auto;
 }
@@ -232,6 +232,30 @@ body main {
 }
 .home-main .hero .hero-left .hero-info {
   position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  text-align: center;
+}
+.home-main .hero .hero-left .hero-info p:nth-child(2) {
+  font-size: 1.5rem;
+}
+.home-main .hero .hero-left .hero-info button {
+  background: transparent;
+  border: none;
+  background-image: url("/assets/images/button-bg-lg-dark.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  width: 95px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+}
+.home-main .hero .hero-left .hero-info button::after {
+  content: "VIEW DETAILS";
+  color: hsl(42, 81%, 38%);
 }
 .home-main .hero .hero-right {
   background-image: url("/assets/images/bg-pattern.jpg");
