@@ -1,0 +1,44 @@
+@use "../base/typography" as t;
+
+.home-main {
+  .hero {
+    display: flex;
+
+    > * {
+      flex-basis: 50%;
+    }
+
+    .hero-left {
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+      .hero-info {
+        position: absolute;
+      }
+    }
+
+    .hero-right {
+      background-image: url("/assets/images/bg-pattern.jpg");
+      background-size: cover;
+      display: grid;
+      padding: 3rem;
+      place-content: center;
+
+      h1 {
+        font-size: t.$font-sz-xxl;
+        font-weight: 400;
+        letter-spacing: t.$l-s-2;
+        max-width: 20ch;
+        margin: 0 auto 2rem;
+        text-align: center;
+        line-height: t.$l-h-md;
+      }
+
+      p {
+        line-height: t.$l-h-lg;
+      }
+    }
+  }
+}
