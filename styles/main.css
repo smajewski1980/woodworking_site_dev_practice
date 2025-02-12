@@ -275,4 +275,11 @@ body main {
 }
 .home-main .hero .hero-right p {
   line-height: 1.6;
+}
+.home-main .home-sec {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+}
+.home-main .home-sec img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

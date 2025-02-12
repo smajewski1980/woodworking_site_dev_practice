@@ -70,9 +70,14 @@
     }
   }
 
-  // .home-sec {
-  //   display:grid;
-  // }
+  .home-sec {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
 // when needed
