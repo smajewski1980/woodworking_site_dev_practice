@@ -74,11 +74,37 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
 
-    img {
+    .grid-content > img {
       width: 100%;
+    }
+
+    // .grid-content:nth-child(2) {
+    // }
+
+    .grid-content:nth-child(n + 4) {
+      background: white;
+      padding: 1.5rem;
+    }
+
+    .grid-content:nth-child(4) {
+      border-image: url("/assets/images/separator-dark-vertical.png") 0 10 /
+        0rem 0.5rem 0rem 0rem / 0rem repeat round;
+      position: relative;
+
+      p {
+        font-family: t.$font;
+        letter-spacing: t.$l-s-1;
+      }
+
+      p:nth-child(odd) {
+        color: t.$font-color-grey;
+        font-size: 0.85rem;
+      }
+
+      p:nth-child(even) {
+        font-size: t.$font-sz-xl;
+        margin-bottom: 2rem;
+      }
     }
   }
 }
-
-// when needed
-// repeat(auto-fit, minmax( 370px, 1fr)

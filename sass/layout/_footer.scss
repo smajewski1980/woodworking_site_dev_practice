@@ -8,10 +8,6 @@ footer {
   padding-inline: $pad-mar-calc;
 
   .footer-top {
-    // * {
-    //   @include test;
-    // }
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-top: 2rem;

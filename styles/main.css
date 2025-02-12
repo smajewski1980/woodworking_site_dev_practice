@@ -280,6 +280,27 @@ body main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
 }
-.home-main .home-sec img {
+.home-main .home-sec .grid-content > img {
   width: 100%;
+}
+.home-main .home-sec .grid-content:nth-child(n+4) {
+  background: white;
+  padding: 1.5rem;
+}
+.home-main .home-sec .grid-content:nth-child(4) {
+  -o-border-image: url("/assets/images/separator-dark-vertical.png") 0 10/0rem 0.5rem 0rem 0rem/0rem repeat round;
+     border-image: url("/assets/images/separator-dark-vertical.png") 0 10/0rem 0.5rem 0rem 0rem/0rem repeat round;
+  position: relative;
+}
+.home-main .home-sec .grid-content:nth-child(4) p {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+.home-main .home-sec .grid-content:nth-child(4) p:nth-child(odd) {
+  color: hsl(0, 0%, 48%);
+  font-size: 0.85rem;
+}
+.home-main .home-sec .grid-content:nth-child(4) p:nth-child(even) {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=main.css.map */
