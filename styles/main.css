@@ -171,7 +171,6 @@ footer .footer-bottom {
   color: hsl(42, 81%, 38%);
   display: flex;
   justify-content: space-between;
-  border-top: 3px solid red;
   -o-border-image: url("/assets/images/separator-dark.png") 10 0/0.4rem 0rem/0.4rem repeat;
      border-image: url("/assets/images/separator-dark.png") 10 0/0.4rem 0rem/0.4rem repeat;
   padding-block: 0.25rem 1.5rem;
@@ -282,10 +281,32 @@ body main {
 }
 .home-main .home-sec .grid-content > img {
   width: 100%;
+  -o-border-image: url("/assets/images/separator-light.png") 10 0/0rem 0.4rem 0.4rem 0.4rem/0.4rem repeat;
+     border-image: url("/assets/images/separator-light.png") 10 0/0rem 0.4rem 0.4rem 0.4rem/0.4rem repeat;
+}
+.home-main .home-sec .grid-content:nth-child(1),
+.home-main .home-sec .grid-content:nth-child(3) {
+  background-color: hsl(17, 19%, 25%);
+}
+.home-main .home-sec .grid-content:nth-child(2) {
+  background-color: hsl(15, 20%, 12%);
 }
 .home-main .home-sec .grid-content:nth-child(n+4) {
   background: white;
   padding: 1.5rem;
+}
+.home-main .home-sec .grid-content:nth-child(-n+3) {
+  color: white;
+}
+.home-main .home-sec .grid-content:nth-child(-n+3) .grid-content-inner-wrapper {
+  padding: 1.5rem;
+}
+.home-main .home-sec .grid-content:nth-child(-n+3) .grid-content-inner-wrapper h4 {
+  color: hsl(45, 100%, 64%);
+  margin-bottom: 0.5rem;
+}
+.home-main .home-sec .grid-content:nth-child(-n+3) .grid-content-inner-wrapper p {
+  line-height: 1.3;
 }
 .home-main .home-sec .grid-content:nth-child(4) {
   -o-border-image: url("/assets/images/separator-dark-vertical.png") 0 10/0rem 0.5rem 0rem 0rem/0rem repeat round;

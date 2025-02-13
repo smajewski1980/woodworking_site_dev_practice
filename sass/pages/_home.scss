@@ -73,17 +73,43 @@
   .home-sec {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    // overflow: hidden;
 
     .grid-content > img {
       width: 100%;
+      border-image: url("/assets/images/separator-light.png") 10 0/ 0rem 0.4rem 0.4rem
+        0.4rem / 0.4rem repeat;
     }
 
-    // .grid-content:nth-child(2) {
-    // }
+    .grid-content:nth-child(1),
+    .grid-content:nth-child(3) {
+      background-color: $card-bg-light;
+    }
+
+    .grid-content:nth-child(2) {
+      background-color: $card-bg-dark;
+    }
 
     .grid-content:nth-child(n + 4) {
       background: white;
       padding: 1.5rem;
+    }
+
+    .grid-content:nth-child(-n + 3) {
+      color: white;
+
+      .grid-content-inner-wrapper {
+        padding: 1.5rem;
+
+        h4 {
+          color: $light-yellow;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          line-height: t.$l-h-md;
+        }
+      }
     }
 
     .grid-content:nth-child(4) {
