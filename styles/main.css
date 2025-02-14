@@ -217,6 +217,73 @@ body main {
   margin-inline: auto;
 }
 
+.about-section {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.about-section > * {
+  flex: 1;
+}
+.about-section .about-content h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  -o-border-image: url("/assets/images/separator-light.png") 10 0/0rem 0rem 0.4rem/0.4rem repeat;
+     border-image: url("/assets/images/separator-light.png") 10 0/0rem 0rem 0.4rem/0.4rem repeat;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+.about-section .about-content h4,
+.about-section .about-content p {
+  opacity: 0.6;
+}
+.about-section .about-content h4 {
+  margin-bottom: 1rem;
+}
+.about-section .about-content h4:not(:first-child) {
+  margin-top: 1.5rem;
+}
+.about-section .about-content p {
+  line-height: 1.6;
+}
+.about-section .about-content p:nth-of-type(4),
+.about-section .about-content p:nth-of-type(5),
+.about-section .about-content p:nth-of-type(6) {
+  margin-bottom: 2rem;
+}
+.about-section .about-content p:nth-of-type(7) {
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+.about-section .about-content u {
+  cursor: pointer;
+}
+.about-section .about-info {
+  background-color: hsl(0, 0%, 88%);
+  padding: 1rem 0.5rem;
+  align-self: start;
+}
+.about-section .about-info img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.about-section .about-info .about-info-content {
+  text-align: center;
+}
+.about-section .about-info .about-info-content p {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+.about-section .about-info .about-info-content p:nth-child(odd) {
+  color: hsl(0, 0%, 48%);
+  font-size: 0.85rem;
+}
+.about-section .about-info .about-info-content p:nth-child(even) {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
 .home-main .hero {
   display: flex;
 }

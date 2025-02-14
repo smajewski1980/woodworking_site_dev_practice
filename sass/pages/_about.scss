@@ -1,0 +1,86 @@
+@use "../abstracts/variables" as *;
+@use "../base/typography" as t;
+
+.about-section {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+
+  > * {
+    flex: 1;
+  }
+
+  .about-content {
+    h1 {
+      font-size: t.$font-sz-xxl;
+      font-weight: t.$font-reg;
+      border-image: url("/assets/images/separator-light.png") 10 0/ 0rem 0rem 0.4rem/
+        0.4rem repeat;
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h4,
+    p {
+      opacity: 0.6;
+    }
+
+    h4 {
+      margin-bottom: 1rem;
+    }
+
+    h4:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+
+    p {
+      line-height: t.$l-h-lg;
+    }
+
+    p:nth-of-type(4),
+    p:nth-of-type(5),
+    p:nth-of-type(6) {
+      margin-bottom: 2rem;
+    }
+
+    p:nth-of-type(7) {
+      margin-bottom: 1rem;
+      font-size: t.$font-sz-xs;
+    }
+
+    u {
+      cursor: pointer;
+    }
+  }
+
+  .about-info {
+    background-color: $accent-grey;
+    padding: 1rem 0.5rem;
+    align-self: start;
+
+    img {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    .about-info-content {
+      text-align: center;
+
+      p {
+        font-family: t.$font;
+        letter-spacing: t.$l-s-1;
+      }
+
+      p:nth-child(odd) {
+        color: t.$font-color-grey;
+        font-size: t.$font-sz-xs;
+      }
+
+      p:nth-child(even) {
+        font-size: t.$font-sz-xl;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
