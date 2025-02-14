@@ -90,11 +90,6 @@
       background-color: $card-bg-dark;
     }
 
-    .grid-content:nth-child(n + 4) {
-      background: white;
-      padding: 1.5rem;
-    }
-
     .grid-content:nth-child(-n + 3) {
       color: white;
 
@@ -112,9 +107,19 @@
       }
     }
 
+    .grid-content:nth-child(n + 4) {
+      background: white;
+      padding: 1.5rem;
+
+      .home-blog-card {
+        color: t.$font-color-grey;
+        font-family: t.$font;
+      }
+    }
+
     .grid-content:nth-child(4) {
       border-image: url("/assets/images/separator-dark-vertical.png") 0 10 /
-        0rem 0.5rem 0rem 0rem / 0rem repeat round;
+        0rem 0.5rem 0rem 0rem / 0.2rem repeat round;
       position: relative;
 
       p {
@@ -124,12 +129,52 @@
 
       p:nth-child(odd) {
         color: t.$font-color-grey;
-        font-size: 0.85rem;
+        font-size: t.$font-sz-xs;
       }
 
       p:nth-child(even) {
         font-size: t.$font-sz-xl;
         margin-bottom: 2rem;
+      }
+    }
+
+    .grid-content:nth-child(5),
+    .grid-content:nth-child(6) {
+      position: relative;
+      z-index: -1;
+      min-height: 20rem;
+
+      .inner-content-wrapper {
+        background-color: $accent-yellow;
+        display: flex;
+        position: absolute;
+        bottom: 3.5rem;
+
+        .left-col {
+          padding: 1rem 0rem 1rem 1rem;
+
+          p {
+            max-width: 15ch;
+            opacity: 0.7;
+          }
+
+          p:not(:first-child) {
+            font-family: t.$font;
+          }
+
+          p:first-child {
+            font-size: t.$font-sz-xs;
+            margin-bottom: 0.5rem;
+          }
+
+          p:last-child {
+            margin-top: 3rem;
+          }
+        }
+
+        img {
+          width: 10rem;
+        }
       }
     }
   }
