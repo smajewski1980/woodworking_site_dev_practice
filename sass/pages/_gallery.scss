@@ -1,0 +1,69 @@
+@use "../abstracts/variables" as *;
+@use "../base/typography" as t;
+
+.gallery-sec {
+  background-color: white;
+  padding: 1.5rem 2.5rem;
+
+  > * {
+    border-image: url("/assets/images/separator-light.png") 10 0/ 0rem 0rem 0.4rem
+      0rem/ 0rem repeat;
+  }
+
+  .sub-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.4rem;
+
+    h1 {
+      font-size: t.$font-sz-xxxl;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        padding-left: 1rem;
+      }
+      li:not(:last-child) {
+        border-right: 2px solid black;
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  .gallery-card {
+    display: flex;
+    gap: 1.5rem;
+    padding-block: 1.5rem;
+
+    > * {
+      flex: 1;
+    }
+
+    .content {
+      display: grid;
+
+      h4 {
+        line-height: 1;
+      }
+
+      > p:first-of-type {
+        line-height: t.$l-h-lg;
+        word-spacing: 7px;
+      }
+
+      .details-wrapper {
+        > *:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      > p:last-of-type {
+        font-size: t.$font-sz-xl;
+        color: $darker-yellow;
+      }
+    }
+  }
+}

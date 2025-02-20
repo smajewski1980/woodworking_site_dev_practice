@@ -284,6 +284,59 @@ body main {
   margin-bottom: 2rem;
 }
 
+.gallery-sec {
+  background-color: white;
+  padding: 1.5rem 2.5rem;
+}
+.gallery-sec > * {
+  -o-border-image: url("/assets/images/separator-light.png") 10 0/0rem 0rem 0.4rem 0rem/0rem repeat;
+     border-image: url("/assets/images/separator-light.png") 10 0/0rem 0rem 0.4rem 0rem/0rem repeat;
+}
+.gallery-sec .sub-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.4rem;
+}
+.gallery-sec .sub-header h1 {
+  font-size: 2.5rem;
+}
+.gallery-sec .sub-header ul {
+  display: flex;
+  align-items: center;
+}
+.gallery-sec .sub-header ul li {
+  padding-left: 1rem;
+}
+.gallery-sec .sub-header ul li:not(:last-child) {
+  border-right: 2px solid black;
+  padding-right: 1rem;
+}
+.gallery-sec .gallery-card {
+  display: flex;
+  gap: 1.5rem;
+  padding-block: 1.5rem;
+}
+.gallery-sec .gallery-card > * {
+  flex: 1;
+}
+.gallery-sec .gallery-card .content {
+  display: grid;
+}
+.gallery-sec .gallery-card .content h4 {
+  line-height: 1;
+}
+.gallery-sec .gallery-card .content > p:first-of-type {
+  line-height: 1.6;
+  word-spacing: 7px;
+}
+.gallery-sec .gallery-card .content .details-wrapper > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.gallery-sec .gallery-card .content > p:last-of-type {
+  font-size: 1.5rem;
+  color: hsl(42, 81%, 38%);
+}
+
 .home-main .hero {
   display: flex;
 }
