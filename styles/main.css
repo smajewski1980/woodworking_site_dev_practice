@@ -288,7 +288,7 @@ body main {
   background-color: white;
   padding: 1.5rem 2.5rem;
 }
-.gallery-sec > * {
+.gallery-sec > *:not(.pagination-wrapper) {
   -o-border-image: url("/assets/images/separator-light.png") 10 0/0rem 0rem 0.4rem 0rem/0rem repeat;
      border-image: url("/assets/images/separator-light.png") 10 0/0rem 0rem 0.4rem 0rem/0rem repeat;
 }
