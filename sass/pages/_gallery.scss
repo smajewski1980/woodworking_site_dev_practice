@@ -4,6 +4,7 @@
 .gallery-sec {
   background-color: white;
   padding: 1.5rem 2.5rem;
+  min-height: 1000px;
 
   > *:not(.pagination-wrapper) {
     border-image: url("/assets/images/separator-light.png") 10 0/ 0rem 0rem 0.4rem
@@ -64,6 +65,37 @@
         font-size: t.$font-sz-xl;
         color: $darker-yellow;
       }
+    }
+  }
+
+  .pagination-wrapper {
+    margin-block-start: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    > * {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .page-links-wrapper {
+      display: flex;
+      gap: 0.25rem;
+
+      p {
+        background-color: $accent-grey;
+        padding-inline: 0.5rem;
+      }
+    }
+
+    .prev-wrapper p:last-child,
+    .next-wrapper p:first-child {
+      font-size: t.$font-sz-lg;
+    }
+    .prev-wrapper p:first-child,
+    .next-wrapper p:last-child {
+      font-size: t.$font-sz-xl;
     }
   }
 }

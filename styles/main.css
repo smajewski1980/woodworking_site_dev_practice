@@ -287,6 +287,7 @@ body main {
 .gallery-sec {
   background-color: white;
   padding: 1.5rem 2.5rem;
+  min-height: 1000px;
 }
 .gallery-sec > *:not(.pagination-wrapper) {
   -o-border-image: url("/assets/images/separator-light.png") 10 0/0rem 0rem 0.4rem 0rem/0rem repeat;
@@ -335,6 +336,32 @@ body main {
 .gallery-sec .gallery-card .content > p:last-of-type {
   font-size: 1.5rem;
   color: hsl(42, 81%, 38%);
+}
+.gallery-sec .pagination-wrapper {
+  margin-block-start: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.gallery-sec .pagination-wrapper > * {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.gallery-sec .pagination-wrapper .page-links-wrapper {
+  display: flex;
+  gap: 0.25rem;
+}
+.gallery-sec .pagination-wrapper .page-links-wrapper p {
+  background-color: hsl(0, 0%, 88%);
+  padding-inline: 0.5rem;
+}
+.gallery-sec .pagination-wrapper .prev-wrapper p:last-child,
+.gallery-sec .pagination-wrapper .next-wrapper p:first-child {
+  font-size: 1.25rem;
+}
+.gallery-sec .pagination-wrapper .prev-wrapper p:first-child,
+.gallery-sec .pagination-wrapper .next-wrapper p:last-child {
+  font-size: 1.5rem;
 }
 
 .home-main .hero {
