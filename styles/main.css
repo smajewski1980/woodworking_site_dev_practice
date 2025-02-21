@@ -284,6 +284,24 @@ body main {
   margin-bottom: 2rem;
 }
 
+.blog-sec {
+  padding: 1.5rem 2.5rem;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 2rem;
+}
+.blog-sec .blog-post .blog-post-header {
+  display: flex;
+}
+.blog-sec .blog-post img {
+  width: 100%;
+}
+.blog-sec aside {
+  border-left: 3px solid yellow;
+  padding-left: 2rem;
+}
+
 .gallery-sec {
   background-color: white;
   padding: 1.5rem 2.5rem;

@@ -1,0 +1,22 @@
+.blog-sec {
+  padding: 1.5rem 2.5rem;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 2rem;
+
+  .blog-post {
+    .blog-post-header {
+      display: flex;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  aside {
+    border-left: 3px solid yellow;
+    padding-left: 2rem;
+  }
+}
