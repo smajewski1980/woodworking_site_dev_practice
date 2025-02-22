@@ -18,7 +18,7 @@
         margin-right: 0.5rem;
       }
       h1 {
-        margin-bottom: 0.45rem;
+        margin-bottom: 0.25rem;
         line-height: t.$l-h-sm;
       }
     }
@@ -53,7 +53,10 @@
         display: flex;
 
         img {
-          width: 25px;
+          width: 20px;
+          height: 18px;
+          margin-right: 0.25rem;
+          margin-top: 0.2rem;
         }
       }
     }

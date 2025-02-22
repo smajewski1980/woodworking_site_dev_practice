@@ -300,7 +300,7 @@ body main {
   margin-right: 0.5rem;
 }
 .blog-sec .blog-post .blog-post-header h1 {
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.25rem;
   line-height: 1.2;
 }
 .blog-sec .blog-post img:not(.blog-post-footer img) {
@@ -327,7 +327,10 @@ body main {
   display: flex;
 }
 .blog-sec .blog-post .blog-post-footer .comments img {
-  width: 25px;
+  width: 20px;
+  height: 18px;
+  margin-right: 0.25rem;
+  margin-top: 0.2rem;
 }
 .blog-sec aside {
   border-left: 3px solid red;
