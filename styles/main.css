@@ -293,12 +293,44 @@ body main {
 }
 .blog-sec .blog-post .blog-post-header {
   display: flex;
+  margin-bottom: 1rem;
 }
-.blog-sec .blog-post img {
+.blog-sec .blog-post .blog-post-header img {
+  width: 55px;
+  margin-right: 0.5rem;
+}
+.blog-sec .blog-post .blog-post-header h1 {
+  margin-bottom: 0.45rem;
+  line-height: 1.2;
+}
+.blog-sec .blog-post img:not(.blog-post-footer img) {
   width: 100%;
+  margin-bottom: 1.5rem;
+}
+.blog-sec .blog-post .blog-post-body {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.blog-sec .blog-post .blog-post-footer {
+  border-bottom: 3px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+  padding-bottom: 1.5rem;
+}
+.blog-sec .blog-post .blog-post-footer p {
+  font-family: "Oswald", sans-serif;
+}
+.blog-sec .blog-post .blog-post-footer .comments {
+  display: flex;
+}
+.blog-sec .blog-post .blog-post-footer .comments img {
+  width: 25px;
 }
 .blog-sec aside {
-  border-left: 3px solid yellow;
+  border-left: 3px solid red;
   padding-left: 2rem;
 }
 

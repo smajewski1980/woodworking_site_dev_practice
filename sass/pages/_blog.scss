@@ -1,3 +1,6 @@
+@use "../abstracts/variables" as *;
+@use "../base/typography" as t;
+
 .blog-sec {
   padding: 1.5rem 2.5rem;
   background-color: white;
@@ -8,15 +11,56 @@
   .blog-post {
     .blog-post-header {
       display: flex;
+      margin-bottom: 1rem;
+
+      img {
+        width: 55px;
+        margin-right: 0.5rem;
+      }
+      h1 {
+        margin-bottom: 0.45rem;
+        line-height: t.$l-h-sm;
+      }
     }
 
-    img {
+    img:not(.blog-post-footer img) {
       width: 100%;
+      margin-bottom: 1.5rem;
+    }
+
+    .blog-post-body {
+      line-height: t.$l-h-lg;
+      margin-bottom: 1.5rem;
+    }
+
+    .blog-post-footer {
+      border-bottom: 3px solid red;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: t.$font;
+      font-weight: t.$font-ex-bold;
+      padding-bottom: 1.5rem;
+      // * {
+      //   @include test;
+      // }
+
+      p {
+        font-family: t.$font;
+      }
+
+      .comments {
+        display: flex;
+
+        img {
+          width: 25px;
+        }
+      }
     }
   }
 
   aside {
-    border-left: 3px solid yellow;
+    border-left: 3px solid red;
     padding-left: 2rem;
   }
 }
