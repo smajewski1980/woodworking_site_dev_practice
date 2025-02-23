@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 @use "../base/typography" as t;
 
 footer {
@@ -41,37 +42,20 @@ footer {
       padding-inline: 2rem;
       border-image: url("/assets/images/separator-dark-vertical.png") 0 10 /
         0.5rem / 0.4rem repeat round;
+
       .footer-card {
-        // * {
-        //   @include test;
-        // }
         display: flex;
         gap: 0.75rem;
         margin-bottom: 2rem;
 
         &:nth-child(2) > div:first-of-type::after {
-          content: "16";
-          position: absolute;
-          bottom: 1.75rem;
-          left: 50%;
-          transform: translateX(-50%);
-          color: white;
+          @include blog-date("16");
         }
         &:nth-child(3) > div:first-of-type::after {
-          content: "15";
-          position: absolute;
-          bottom: 1.75rem;
-          left: 50%;
-          transform: translateX(-50%);
-          color: white;
+          @include blog-date("15");
         }
         &:nth-child(4) > div:first-of-type::after {
-          content: "14";
-          position: absolute;
-          bottom: 1.75rem;
-          left: 50%;
-          transform: translateX(-50%);
-          color: white;
+          @include blog-date("14");
         }
 
         .date {
@@ -79,11 +63,7 @@ footer {
           position: relative;
 
           &::before {
-            content: "APR";
-            color: white;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
+            @include blog-month("APR");
           }
 
           img {

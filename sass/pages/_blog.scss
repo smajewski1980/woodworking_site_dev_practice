@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 @use "../base/typography" as t;
 
 .blog-sec {
@@ -12,6 +13,7 @@
     .blog-post-header {
       display: flex;
       margin-bottom: 1rem;
+      gap: 0.35rem;
 
       img {
         width: 55px;
@@ -60,10 +62,62 @@
         }
       }
     }
+
+    position: relative;
+
+    .pagination-wrapper {
+      @include pagination();
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
   }
 
   aside {
     border-left: 3px solid red;
-    padding-left: 2rem;
+    padding-inline: 2rem;
+
+    h4 {
+      margin-bottom: 2rem;
+    }
+
+    .featured-blogs {
+      .blog-card {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+
+        img {
+          width: 55px;
+        }
+
+        .blog-card-content {
+          width: 25ch;
+
+          h5 {
+            margin-bottom: 0.5rem;
+          }
+
+          p {
+            font-size: t.$font-sz-xs;
+            line-height: t.$l-h-lg;
+          }
+        }
+      }
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-categories {
+      border-top: 3px solid red;
+      border-bottom: 3px solid red;
+      padding-block: 1.5rem;
+    }
+
+    .archives {
+      padding-block: 1.5rem 5rem;
+    }
   }
 }

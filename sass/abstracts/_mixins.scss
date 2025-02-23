@@ -1,0 +1,50 @@
+@use "../abstracts/variables" as *;
+@use "../base/typography" as t;
+
+@mixin pagination() {
+  margin-block-start: 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  > * {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .page-links-wrapper {
+    display: flex;
+    gap: 0.25rem;
+
+    p {
+      background-color: $accent-grey;
+      padding-inline: 0.5rem;
+    }
+  }
+
+  .prev-wrapper p:last-child,
+  .next-wrapper p:first-child {
+    font-size: t.$font-sz-lg;
+  }
+  .prev-wrapper p:first-child,
+  .next-wrapper p:last-child {
+    font-size: t.$font-sz-xl;
+  }
+}
+
+@mixin blog-date($date) {
+  content: $date;
+  position: absolute;
+  bottom: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+@mixin blog-month($month) {
+  content: $month;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

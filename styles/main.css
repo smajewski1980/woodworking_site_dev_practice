@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("/assets/fonts/Oswald.woff") format("woff");
+}
+@font-face {
+  font-family: "QuattrocentoSans-Regular";
+  src: url("/assets/fonts/QuattrocentoSans-Regular.woff") format("woff");
+}
+p {
+  font-family: "QuattrocentoSans-Regular", sans-serif;
+}
+
 *,
 *::after,
 *::before {
@@ -24,18 +36,6 @@ button {
 
 ul {
   list-style-type: none;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("/assets/fonts/Oswald.woff") format("woff");
-}
-@font-face {
-  font-family: "QuattrocentoSans-Regular";
-  src: url("/assets/fonts/QuattrocentoSans-Regular.woff") format("woff");
-}
-p {
-  font-family: "QuattrocentoSans-Regular", sans-serif;
 }
 
 footer {
@@ -291,9 +291,13 @@ body main {
   grid-template-columns: 65% 35%;
   gap: 2rem;
 }
+.blog-sec .blog-post {
+  position: relative;
+}
 .blog-sec .blog-post .blog-post-header {
   display: flex;
   margin-bottom: 1rem;
+  gap: 0.35rem;
 }
 .blog-sec .blog-post .blog-post-header img {
   width: 55px;
@@ -332,9 +336,70 @@ body main {
   margin-right: 0.25rem;
   margin-top: 0.2rem;
 }
+.blog-sec .blog-post .pagination-wrapper {
+  margin-block-start: 1rem;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.blog-sec .blog-post .pagination-wrapper > * {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.blog-sec .blog-post .pagination-wrapper .page-links-wrapper {
+  display: flex;
+  gap: 0.25rem;
+}
+.blog-sec .blog-post .pagination-wrapper .page-links-wrapper p {
+  background-color: hsl(0, 0%, 88%);
+  padding-inline: 0.5rem;
+}
+.blog-sec .blog-post .pagination-wrapper .prev-wrapper p:last-child,
+.blog-sec .blog-post .pagination-wrapper .next-wrapper p:first-child {
+  font-size: 1.25rem;
+}
+.blog-sec .blog-post .pagination-wrapper .prev-wrapper p:first-child,
+.blog-sec .blog-post .pagination-wrapper .next-wrapper p:last-child {
+  font-size: 1.5rem;
+}
 .blog-sec aside {
   border-left: 3px solid red;
-  padding-left: 2rem;
+  padding-inline: 2rem;
+}
+.blog-sec aside h4 {
+  margin-bottom: 2rem;
+}
+.blog-sec aside .featured-blogs .blog-card {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.blog-sec aside .featured-blogs .blog-card img {
+  width: 55px;
+}
+.blog-sec aside .featured-blogs .blog-card .blog-card-content {
+  width: 25ch;
+}
+.blog-sec aside .featured-blogs .blog-card .blog-card-content h5 {
+  margin-bottom: 0.5rem;
+}
+.blog-sec aside .featured-blogs .blog-card .blog-card-content p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+.blog-sec aside li {
+  margin-bottom: 0.5rem;
+}
+.blog-sec aside .blog-categories {
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+  padding-block: 1.5rem;
+}
+.blog-sec aside .archives {
+  padding-block: 1.5rem 5rem;
 }
 
 .gallery-sec {
