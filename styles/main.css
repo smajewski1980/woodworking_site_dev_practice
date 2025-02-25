@@ -336,7 +336,8 @@ body main {
   margin-bottom: 1.5rem;
 }
 .blog-sec .blog-post .blog-post-footer {
-  border-bottom: 3px solid red;
+  -o-border-image: url("/assets/images/separator-dark.png") 10 0/0rem 0rem 0.4rem 0rem/0.4rem repeat;
+     border-image: url("/assets/images/separator-dark.png") 10 0/0rem 0rem 0.4rem 0rem/0.4rem repeat;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -386,7 +387,8 @@ body main {
   font-size: 1.5rem;
 }
 .blog-sec aside {
-  border-left: 3px solid red;
+  -o-border-image: url("/assets/images/separator-dark-vertical.png") 0 10/0rem 0rem 0rem 0.4rem/0.4rem repeat;
+     border-image: url("/assets/images/separator-dark-vertical.png") 0 10/0rem 0rem 0rem 0.4rem/0.4rem repeat;
   padding-inline: 2rem;
 }
 .blog-sec aside h4 {
@@ -441,8 +443,8 @@ body main {
   margin-bottom: 0.5rem;
 }
 .blog-sec aside .blog-categories {
-  border-top: 3px solid red;
-  border-bottom: 3px solid red;
+  -o-border-image: url("/assets/images/separator-dark.png") 10 0/0.4rem 0rem 0.4rem 0rem/0.4rem repeat;
+     border-image: url("/assets/images/separator-dark.png") 10 0/0.4rem 0rem 0.4rem 0rem/0.4rem repeat;
   padding-block: 1.5rem;
 }
 .blog-sec aside .archives {

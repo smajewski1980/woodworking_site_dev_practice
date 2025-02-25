@@ -47,16 +47,15 @@
     }
 
     .blog-post-footer {
-      border-bottom: 3px solid red;
+      // border-bottom: 3px solid red;
+      border-image: url("/assets/images/separator-dark.png") 10 0/ 0rem 0rem 0.4rem
+        0rem/ 0.4rem repeat;
       display: flex;
       align-items: center;
       justify-content: space-between;
       font-family: t.$font;
       font-weight: t.$font-ex-bold;
       padding-bottom: 1.5rem;
-      // * {
-      //   @include test;
-      // }
 
       p {
         font-family: t.$font;
@@ -85,7 +84,8 @@
   }
 
   aside {
-    border-left: 3px solid red;
+    border-image: url("/assets/images/separator-dark-vertical.png") 0 10/ 0rem 0rem
+      0rem 0.4rem/ 0.4rem repeat;
     padding-inline: 2rem;
 
     h4 {
@@ -93,16 +93,6 @@
     }
 
     .featured-blogs {
-      // &:nth-child(2) > div:first-of-type::after {
-      //   @include blog-date("16");
-      // }
-      // &:nth-child(3) > div:first-of-type::after {
-      //   @include blog-date("15");
-      // }
-      // &:nth-child(4) > div:first-of-type::after {
-      //   @include blog-date("14");
-      // }
-
       .blog-card:nth-of-type(1) .date:nth-child(1)::after {
         @include blog-date("16");
         bottom: 1.4rem;
@@ -145,8 +135,8 @@
     }
 
     .blog-categories {
-      border-top: 3px solid red;
-      border-bottom: 3px solid red;
+      border-image: url("/assets/images/separator-dark.png") 10 0/ 0.4rem 0rem 0.4rem
+        0rem/ 0.4rem repeat;
       padding-block: 1.5rem;
     }
 
