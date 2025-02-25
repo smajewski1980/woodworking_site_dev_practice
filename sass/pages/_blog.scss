@@ -9,6 +9,17 @@
   grid-template-columns: 65% 35%;
   gap: 2rem;
 
+  .date {
+    position: relative;
+
+    &::before {
+      @include blog-month("APR");
+    }
+    &::after {
+      @include blog-date("16");
+    }
+  }
+
   .blog-post {
     .blog-post-header {
       display: flex;
@@ -82,6 +93,29 @@
     }
 
     .featured-blogs {
+      // &:nth-child(2) > div:first-of-type::after {
+      //   @include blog-date("16");
+      // }
+      // &:nth-child(3) > div:first-of-type::after {
+      //   @include blog-date("15");
+      // }
+      // &:nth-child(4) > div:first-of-type::after {
+      //   @include blog-date("14");
+      // }
+
+      .blog-card:nth-of-type(1) .date:nth-child(1)::after {
+        @include blog-date("16");
+        bottom: 1.4rem;
+      }
+      .blog-card:nth-of-type(2) .date:nth-child(1)::after {
+        @include blog-date("15");
+        bottom: 1.4rem;
+      }
+      .blog-card:nth-of-type(3) .date:nth-child(1)::after {
+        @include blog-date("14");
+        bottom: 1.4rem;
+      }
+
       .blog-card {
         display: flex;
         gap: 0.5rem;

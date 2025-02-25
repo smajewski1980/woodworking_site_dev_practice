@@ -113,6 +113,7 @@ footer .footer-top .footer-section-2 .footer-card .date::before {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  top: 0.15rem;
 }
 footer .footer-top .footer-section-2 .footer-card .date img {
   width: 100%;
@@ -291,6 +292,25 @@ body main {
   grid-template-columns: 65% 35%;
   gap: 2rem;
 }
+.blog-sec .date {
+  position: relative;
+}
+.blog-sec .date::before {
+  content: "APR";
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0.15rem;
+}
+.blog-sec .date::after {
+  content: "16";
+  position: absolute;
+  bottom: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
 .blog-sec .blog-post {
   position: relative;
 }
@@ -371,6 +391,33 @@ body main {
 }
 .blog-sec aside h4 {
   margin-bottom: 2rem;
+}
+.blog-sec aside .featured-blogs .blog-card:nth-of-type(1) .date:nth-child(1)::after {
+  content: "16";
+  position: absolute;
+  bottom: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  bottom: 1.4rem;
+}
+.blog-sec aside .featured-blogs .blog-card:nth-of-type(2) .date:nth-child(1)::after {
+  content: "15";
+  position: absolute;
+  bottom: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  bottom: 1.4rem;
+}
+.blog-sec aside .featured-blogs .blog-card:nth-of-type(3) .date:nth-child(1)::after {
+  content: "14";
+  position: absolute;
+  bottom: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  bottom: 1.4rem;
 }
 .blog-sec aside .featured-blogs .blog-card {
   display: flex;

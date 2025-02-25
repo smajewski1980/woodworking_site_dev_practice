@@ -87,16 +87,19 @@ footer {
 
       .footer-sec-3-top {
         margin-bottom: 1.75rem;
+
         input {
           padding: 0.5rem 0.3rem;
           width: 100%;
           border: 3px solid $darker-yellow;
           margin-bottom: 0.5rem;
+
           &::placeholder {
             letter-spacing: t.$l-s-1;
             font-weight: t.$font-bold;
           }
         }
+
         button {
           background-color: transparent;
           border: none;
