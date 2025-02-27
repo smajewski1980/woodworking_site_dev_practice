@@ -451,6 +451,68 @@ body main {
   padding-block: 1.5rem 5rem;
 }
 
+.contact-sec {
+  background-color: white;
+  display: flex;
+  align-items: start;
+}
+.contact-sec > * {
+  flex: 1;
+}
+.contact-sec .contact-left-col {
+  padding: 1.5rem 0rem 1.5rem 1.5rem;
+}
+.contact-sec .contact-left-col h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+.contact-sec .contact-left-col p {
+  line-height: 2;
+  -o-border-image: url("/assets/images/separator-dark.png") 10 0/0rem 0rem 0.4rem/0.4rem repeat;
+     border-image: url("/assets/images/separator-dark.png") 10 0/0rem 0rem 0.4rem/0.4rem repeat;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.contact-sec .contact-left-col #contact-form label {
+  font-family: "QuattrocentoSans-Regular", sans-serif;
+}
+.contact-sec .contact-left-col #contact-form input,
+.contact-sec .contact-left-col #contact-form textarea {
+  border: 3px solid hsl(42, 81%, 38%);
+  width: 100%;
+  padding: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+.contact-sec .contact-left-col #contact-form input {
+  font-size: 1.5rem;
+}
+.contact-sec .contact-right-col {
+  padding: 0.75rem 0.5rem 0rem;
+  margin: 1.5rem;
+  background-color: hsl(0, 0%, 88%);
+}
+.contact-sec .contact-right-col img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.contact-sec .contact-right-col .contact-info {
+  text-align: center;
+}
+.contact-sec .contact-right-col .contact-info p {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+}
+.contact-sec .contact-right-col .contact-info p:nth-child(odd) {
+  color: hsl(0, 0%, 48%);
+  font-size: 0.85rem;
+}
+.contact-sec .contact-right-col .contact-info p:nth-child(even) {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
 .gallery-sec {
   background-color: white;
   padding: 1.5rem 2.5rem;

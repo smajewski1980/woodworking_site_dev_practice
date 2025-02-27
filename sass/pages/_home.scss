@@ -77,6 +77,8 @@
 
     .grid-content > img {
       width: 100%;
+      // later i want to try and make a <hr> and uses this border image if it works
+      // the current way, you can see its 3 seperate chunks instead of one continuous
       border-image: url("/assets/images/separator-light.png") 10 0/ 0rem 0.4rem 0.4rem
         0.4rem / 0.4rem repeat;
     }

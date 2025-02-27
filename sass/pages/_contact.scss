@@ -1,0 +1,79 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../base/typography" as t;
+
+.contact-sec {
+  background-color: white;
+  display: flex;
+  align-items: start;
+
+  > * {
+    flex: 1;
+  }
+
+  .contact-left-col {
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
+
+    h1 {
+      font-size: t.$font-sz-xxl;
+      font-weight: t.$font-reg;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      line-height: t.$l-h-xl;
+      border-image: url("/assets/images/separator-dark.png") 10 0/ 0rem 0rem 0.4rem/
+        0.4rem repeat;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    #contact-form {
+      label {
+        font-family: t.$font-secondary;
+      }
+
+      input,
+      textarea {
+        border: 3px solid $darker-yellow;
+        width: 100%;
+        padding: 0.25rem;
+        margin-top: 0.25rem;
+        margin-bottom: 1rem;
+      }
+      input {
+        font-size: t.$font-sz-xl;
+      }
+    }
+  }
+
+  .contact-right-col {
+    padding: 0.75rem 0.5rem 0rem;
+    margin: 1.5rem;
+    background-color: $accent-grey;
+
+    img {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    .contact-info {
+      text-align: center;
+
+      p {
+        font-family: t.$font;
+        letter-spacing: t.$l-s-1;
+      }
+
+      p:nth-child(odd) {
+        color: t.$font-color-grey;
+        font-size: t.$font-sz-xs;
+      }
+
+      p:nth-child(even) {
+        font-size: t.$font-sz-xl;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
