@@ -41,8 +41,19 @@
         margin-top: 0.25rem;
         margin-bottom: 1rem;
       }
+
       input {
         font-size: t.$font-sz-xl;
+      }
+
+      button {
+        @include yellow-btn(105px, 40px, 0.75rem);
+
+        &::after {
+          @include yellow-btn-after(SEND MESSAGE);
+          text-wrap: nowrap;
+          margin-top: -0.4rem;
+        }
       }
     }
   }

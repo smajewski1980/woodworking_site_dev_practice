@@ -49,3 +49,23 @@
   transform: translateX(-50%);
   top: 0.15rem;
 }
+
+@mixin yellow-btn($width, $height, $padding) {
+  background: transparent;
+  border: none;
+  background-image: url("/assets/images/button-bg-lg-dark.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: $padding;
+  width: $width;
+  height: $height;
+  display: grid;
+  place-content: center;
+}
+
+@mixin yellow-btn-after($text) {
+  content: "#{$text}";
+  color: $darker-yellow;
+}

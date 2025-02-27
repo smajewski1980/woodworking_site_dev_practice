@@ -488,6 +488,26 @@ body main {
 .contact-sec .contact-left-col #contact-form input {
   font-size: 1.5rem;
 }
+.contact-sec .contact-left-col #contact-form button {
+  background: transparent;
+  border: none;
+  background-image: url("/assets/images/button-bg-lg-dark.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0.75rem;
+  width: 105px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+}
+.contact-sec .contact-left-col #contact-form button::after {
+  content: "SEND MESSAGE";
+  color: hsl(42, 81%, 38%);
+  text-wrap: nowrap;
+  margin-top: -0.4rem;
+}
 .contact-sec .contact-right-col {
   padding: 0.75rem 0.5rem 0rem;
   margin: 1.5rem;
