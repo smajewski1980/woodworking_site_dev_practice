@@ -585,6 +585,9 @@ body main {
 .gallery-sec .sub-header ul li {
   padding-left: 1rem;
 }
+.gallery-sec .sub-header ul li:first-child {
+  color: hsl(42, 81%, 38%);
+}
 .gallery-sec .sub-header ul li:not(:last-child) {
   border-right: 2px solid black;
   padding-right: 1rem;
@@ -639,6 +642,14 @@ body main {
 .gallery-sec .pagination-wrapper .prev-wrapper p:first-child,
 .gallery-sec .pagination-wrapper .next-wrapper p:last-child {
   font-size: 1.5rem;
+}
+.gallery-sec .pagination-wrapper .page-links-wrapper p,
+.gallery-sec .pagination-wrapper .next-wrapper,
+.gallery-sec .pagination-wrapper .prev-wrapper {
+  cursor: pointer;
+}
+.gallery-sec .pagination-wrapper .page-links-wrapper p:first-child {
+  background-color: hsl(43, 96%, 63%);
 }
 
 .home-main .hero {

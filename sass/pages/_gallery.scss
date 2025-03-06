@@ -28,6 +28,11 @@
       li {
         padding-left: 1rem;
       }
+
+      li:first-child {
+        color: $darker-yellow;
+      }
+
       li:not(:last-child) {
         border-right: 2px solid black;
         padding-right: 1rem;
@@ -71,5 +76,15 @@
 
   .pagination-wrapper {
     @include pagination();
+
+    .page-links-wrapper p,
+    .next-wrapper,
+    .prev-wrapper {
+      cursor: pointer;
+    }
+
+    .page-links-wrapper p:first-child {
+      background-color: $dark-yellow;
+    }
   }
 }
