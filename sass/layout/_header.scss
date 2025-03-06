@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as *;
 
 header {
+  border-bottom: 1px solid white;
   background: black;
   display: flex;
   position: absolute;
@@ -11,6 +12,8 @@ header {
   padding-inline: $pad-mar-calc;
   align-items: center;
   justify-content: space-between;
+  z-index: 99;
+  box-shadow: 0px 1px 5px rgb(51, 51, 51);
 
   nav {
     color: white;
@@ -19,6 +22,11 @@ header {
       display: flex;
       font-size: 1.125rem;
       gap: 2rem;
+
+      li:hover,
+      li:focus-visible {
+        color: $dark-yellow;
+      }
     }
   }
 }
