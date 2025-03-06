@@ -76,15 +76,5 @@
 
   .pagination-wrapper {
     @include pagination();
-
-    .page-links-wrapper p,
-    .next-wrapper,
-    .prev-wrapper {
-      cursor: pointer;
-    }
-
-    .page-links-wrapper p:first-child {
-      background-color: $dark-yellow;
-    }
   }
 }

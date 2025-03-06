@@ -12,6 +12,16 @@
     gap: 0.25rem;
   }
 
+  .page-links-wrapper p,
+  .next-wrapper,
+  .prev-wrapper {
+    cursor: pointer;
+  }
+
+  .page-links-wrapper p:first-child {
+    background-color: $dark-yellow;
+  }
+
   .page-links-wrapper {
     display: flex;
     gap: 0.25rem;
