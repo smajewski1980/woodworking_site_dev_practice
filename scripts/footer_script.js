@@ -68,7 +68,6 @@ function loadFooterHtml() {
                 type="email"
                 required
                 autocomplete="off"
-                autofocus="false"
                 placeholder="Enter Email Address Here For Updates"
               />
               <button type="submit">SIGN UP</button>

@@ -643,6 +643,7 @@ body main {
 
 .home-main .hero {
   display: flex;
+  border-bottom: 1px solid white;
 }
 .home-main .hero > * {
   flex-basis: 50%;
