@@ -3,6 +3,8 @@
 @use "../base/typography" as t;
 
 footer {
+  box-shadow: 0px 1px 5px rgb(51, 51, 51);
+  border-top: 1px solid white;
   background: $dark-yellow;
   width: $head-foot-width;
   transform: translateX(calc($pad-mar-calc * -1));
@@ -12,10 +14,12 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-top: 2rem;
+    color: $card-bg-light;
 
     h3 {
       margin-bottom: 1rem;
       font-weight: t.$font-ex-bold;
+      color: $card-bg-dark;
     }
 
     .footer-section-1 {
@@ -109,6 +113,7 @@ footer {
           background-size: contain;
           color: white;
           font-weight: t.$font-ex-bold;
+          cursor: pointer;
         }
       }
 
@@ -123,6 +128,10 @@ footer {
 
           > * {
             width: 45px;
+            cursor: pointer;
+            &:hover {
+              filter: brightness(1.25);
+            }
           }
         }
       }
@@ -147,6 +156,10 @@ footer {
     ul {
       display: flex;
       gap: 1rem;
+
+      li:hover {
+        color: darken($darker-yellow, 20%);
+      }
     }
   }
 }

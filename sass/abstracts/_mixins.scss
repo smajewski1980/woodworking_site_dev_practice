@@ -39,6 +39,7 @@
   left: 50%;
   transform: translateX(-50%);
   color: white;
+  pointer-events: none;
 }
 
 @mixin blog-month($month) {
@@ -48,6 +49,7 @@
   left: 50%;
   transform: translateX(-50%);
   top: 0.15rem;
+  pointer-events: none;
 }
 
 @mixin yellow-btn($width, $height, $padding) {
@@ -69,3 +71,9 @@
   content: "#{$text}";
   color: $darker-yellow;
 }
+
+// @mixin footer-hover($clr) {
+//   &:hover {
+//     color:
+//   }
+// }

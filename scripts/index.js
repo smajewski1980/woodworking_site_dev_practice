@@ -13,3 +13,11 @@ if (currentUrl.includes("index")) {
 } else {
   navListItems[4].style.color = activeNavClr;
 }
+
+const emailBtn = document.querySelector("#email-input + button");
+const emailInput = document.querySelector("#email-input");
+
+emailBtn.parentElement.addEventListener("submit", (e) => {
+  emailInput.value = "";
+  emailInput.blur();
+});

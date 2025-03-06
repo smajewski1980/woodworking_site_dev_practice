@@ -17,8 +17,24 @@ function loadFooterHtml() {
         <section class="footer-section-2">
           <h3>RECENT BLOG POSTS</h3>
           <div class="footer-card">
-            <div class="date">
+          <div class="date">
+            <a href="./blog.html">
               <img src="./assets/images/bg-time.png" alt="" />
+            </a>
+          </div>
+            <div class="footer-card-content">
+              <h4>This is just a placeholder.</h4>
+              <p>
+                This is just a placeholder, so you can see what the site looks
+                like.
+              </p>
+            </div>
+            </div>
+            <div class="footer-card">
+            <div class="date">
+              <a href="./blog.html">
+                <img src="./assets/images/bg-time.png" alt="" />
+              </a>
             </div>
             <div class="footer-card-content">
               <h4>This is just a placeholder.</h4>
@@ -27,10 +43,12 @@ function loadFooterHtml() {
                 like.
               </p>
             </div>
-          </div>
-          <div class="footer-card">
+            </div>
+            <div class="footer-card">
             <div class="date">
+            <a href="./blog.html">
               <img src="./assets/images/bg-time.png" alt="" />
+            </a>
             </div>
             <div class="footer-card-content">
               <h4>This is just a placeholder.</h4>
@@ -39,28 +57,22 @@ function loadFooterHtml() {
                 like.
               </p>
             </div>
-          </div>
-          <div class="footer-card">
-            <div class="date">
-              <img src="./assets/images/bg-time.png" alt="" />
             </div>
-            <div class="footer-card-content">
-              <h4>This is just a placeholder.</h4>
-              <p>
-                This is just a placeholder, so you can see what the site looks
-                like.
-              </p>
-            </div>
-          </div>
         </section>
         <section class="footer-section-3">
           <div class="footer-sec-3-top">
             <h3>JOIN OUR NEWSLETTER</h3>
-            <input
-              type="email"
-              placeholder="Enter Email Address Here For Updates"
-            />
-            <button>SIGN UP</button>
+            <form>
+              <input
+                id="email-input"
+                type="email"
+                required
+                autocomplete="off"
+                autofocus="false"
+                placeholder="Enter Email Address Here For Updates"
+              />
+              <button type="submit">SIGN UP</button>
+            </form>
           </div>
           <div class="footer-sec-3-bottom">
             <h3>SOCIAL MEDIA</h3>

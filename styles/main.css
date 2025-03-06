@@ -39,6 +39,8 @@ ul {
 }
 
 footer {
+  box-shadow: 0px 1px 5px rgb(51, 51, 51);
+  border-top: 1px solid white;
   background: hsl(43, 96%, 63%);
   width: calc(100vw - 1rem);
   transform: translateX(calc((100vw - 71rem) / 2 * -1));
@@ -48,10 +50,12 @@ footer .footer-top {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-top: 2rem;
+  color: hsl(17, 19%, 25%);
 }
 footer .footer-top h3 {
   margin-bottom: 1rem;
   font-weight: 800;
+  color: hsl(15, 20%, 12%);
 }
 footer .footer-top .footer-section-1 {
   padding-right: 1.75rem;
@@ -86,6 +90,7 @@ footer .footer-top .footer-section-2 .footer-card:nth-child(2) > div:first-of-ty
   left: 50%;
   transform: translateX(-50%);
   color: white;
+  pointer-events: none;
 }
 footer .footer-top .footer-section-2 .footer-card:nth-child(3) > div:first-of-type::after {
   content: "15";
@@ -94,6 +99,7 @@ footer .footer-top .footer-section-2 .footer-card:nth-child(3) > div:first-of-ty
   left: 50%;
   transform: translateX(-50%);
   color: white;
+  pointer-events: none;
 }
 footer .footer-top .footer-section-2 .footer-card:nth-child(4) > div:first-of-type::after {
   content: "14";
@@ -102,6 +108,7 @@ footer .footer-top .footer-section-2 .footer-card:nth-child(4) > div:first-of-ty
   left: 50%;
   transform: translateX(-50%);
   color: white;
+  pointer-events: none;
 }
 footer .footer-top .footer-section-2 .footer-card .date {
   width: 80px;
@@ -114,6 +121,7 @@ footer .footer-top .footer-section-2 .footer-card .date::before {
   left: 50%;
   transform: translateX(-50%);
   top: 0.15rem;
+  pointer-events: none;
 }
 footer .footer-top .footer-section-2 .footer-card .date img {
   width: 100%;
@@ -154,6 +162,7 @@ footer .footer-top .footer-section-3 .footer-sec-3-top button {
   background-size: contain;
   color: white;
   font-weight: 800;
+  cursor: pointer;
 }
 footer .footer-top .footer-section-3 .footer-sec-3-bottom {
   padding-top: 1rem;
@@ -166,6 +175,10 @@ footer .footer-top .footer-section-3 .footer-sec-3-bottom .footer-social-wrapper
 }
 footer .footer-top .footer-section-3 .footer-sec-3-bottom .footer-social-wrapper > * {
   width: 45px;
+  cursor: pointer;
+}
+footer .footer-top .footer-section-3 .footer-sec-3-bottom .footer-social-wrapper > *:hover {
+  filter: brightness(1.25);
 }
 footer .footer-bottom {
   font-weight: 800;
@@ -184,8 +197,12 @@ footer .footer-bottom ul {
   display: flex;
   gap: 1rem;
 }
+footer .footer-bottom ul li:hover {
+  color: #533d09;
+}
 
 header {
+  box-shadow: 0px 1px 5px rgb(51, 51, 51);
   border-bottom: 1px solid white;
   background: black;
   display: flex;
@@ -198,7 +215,6 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 99;
-  box-shadow: 0px 1px 5px rgb(51, 51, 51);
 }
 header nav {
   color: white;
@@ -309,6 +325,7 @@ body main {
   left: 50%;
   transform: translateX(-50%);
   top: 0.15rem;
+  pointer-events: none;
 }
 .blog-sec .date::after {
   content: "16";
@@ -317,6 +334,7 @@ body main {
   left: 50%;
   transform: translateX(-50%);
   color: white;
+  pointer-events: none;
 }
 .blog-sec .blog-post {
   position: relative;
@@ -408,6 +426,7 @@ body main {
   left: 50%;
   transform: translateX(-50%);
   color: white;
+  pointer-events: none;
   bottom: 1.4rem;
 }
 .blog-sec aside .featured-blogs .blog-card:nth-of-type(2) .date:nth-child(1)::after {
@@ -417,6 +436,7 @@ body main {
   left: 50%;
   transform: translateX(-50%);
   color: white;
+  pointer-events: none;
   bottom: 1.4rem;
 }
 .blog-sec aside .featured-blogs .blog-card:nth-of-type(3) .date:nth-child(1)::after {
@@ -426,6 +446,7 @@ body main {
   left: 50%;
   transform: translateX(-50%);
   color: white;
+  pointer-events: none;
   bottom: 1.4rem;
 }
 .blog-sec aside .featured-blogs .blog-card {
